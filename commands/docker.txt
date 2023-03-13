@@ -1,2 +1,22 @@
 1. docker image ls 
 2. minikube docker-env
+3. docker pull mysql:latest
+4. docker rmi -f mysql
+5. docker image ls 
+6. minikube ip
+7. docker container run -p 8080:80 -d nginx
+8. docker container ls
+9. kubectl apply -f firstpod.yaml
+10. kubectl get all
+11. kubectl describe pod nginxpod
+12. kubectl exec nginxpod ls
+13. kubectl exec -it nginxpod sh
+14. port forwarding: 
+kubectl port-forward nginxpod 3080:80
+
+15. pod IP: 
+kubectl get pod/webapp -o wide
+16. start kubectl: 
+minikube start --vm-driver hyperv --hyperv-virtual-switch "miniv"
+
+
